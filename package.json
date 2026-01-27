@@ -1,11 +1,14 @@
 {
-  "name": "@figma/my-make-file",
+  "name": "yellowstrokesltd-website",
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "homepage": "https://yellowstrokesltd-debug.github.io",
   "scripts": {
     "build": "vite build",
-    "dev": "vite"
+    "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
