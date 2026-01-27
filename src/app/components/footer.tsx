@@ -16,7 +16,7 @@ export function Footer() {
               />
             </div>
             <p className="text-gray-400 text-sm">
-              Empowering individuals through holistic development and transformation.
+              Evolve with Purpose, Grow with Guidance.
             </p>
           </div>
 
