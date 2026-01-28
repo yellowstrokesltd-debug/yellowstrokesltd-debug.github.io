@@ -93,7 +93,7 @@ export default function BetterHumanBeingsPage() {
                             Whether you are an individual, a group or institution, we aim to help you become a better version of yourself than you were yesterday.
                         </p>
                         <Link
-                            to="/our-work"
+                            to="/about#services"
                             className="inline-flex items-center px-8 py-4 bg-[#29708F] text-white font-semibold rounded-xl hover:bg-[#1f5a73] transition-all shadow-lg"
                         >
                             Learn More About Our Programs

@@ -1,4 +1,5 @@
 import { Mail, MapPin, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { BackProjectsSection } from '../components/BackProjectsSection';
 import { Layout } from '../components/layout';
 import { SEO } from '../components/SEO';
@@ -72,18 +73,18 @@ export default function ContactPage() {
               Explore our services and discover how we can help you achieve your goals
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/our-work"
+              <Link
+                to="/about#services"
                 className="px-8 py-4 bg-yellow-400 text-black font-semibold rounded-xl hover:bg-yellow-500 transition-all"
               >
                 View Our Services
-              </a>
-              <a
-                href="/about"
+              </Link>
+              <Link
+                to="/about"
                 className="px-8 py-4 bg-white/10 text-white font-semibold rounded-xl hover:bg-white/20 transition-all border border-white/20"
               >
                 Learn About Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>
