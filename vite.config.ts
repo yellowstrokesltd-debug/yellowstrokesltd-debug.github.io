@@ -12,7 +12,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
     Sitemap({
-      hostname: 'https://yellowstrokesltd-debug.github.io',
+      hostname: 'https://yellowstroke.com',
       dynamicRoutes: [
         '/about',
         '/better-human-beings',
