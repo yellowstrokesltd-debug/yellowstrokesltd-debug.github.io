@@ -101,6 +101,42 @@ export default function BetterHumanBeingsPage() {
                         </Link>
                     </div>
 
+
+                    <div className="mb-16">
+                        <div className="text-center mb-8">
+                            <h2 className="text-3xl md:text-4xl font-bold text-[#29708F] mb-4">Current Projects</h2>
+                            <p className="text-gray-600 max-w-2xl mx-auto">
+                                Explore our active initiatives and challenges. Click to learn more and join us.
+                            </p>
+                        </div>
+
+                        <div className="max-w-4xl mx-auto">
+                            <Link to="/projects/do-better-be-better" className="block group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div className="w-full">
+                                    <ImageWithFallback
+                                        src="/projectpreview.jpeg"
+                                        alt="Current Project Preview"
+                                        className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
+                                    />
+                                </div>
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8">
+                                    <span className="inline-block px-3 py-1 bg-yellow-400 text-black text-xs font-bold rounded-full mb-3 w-fit">
+                                        FEATURED
+                                    </span>
+                                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors">
+                                        DoBetterBeBetterTogether Challenge
+                                    </h3>
+                                    <p className="text-gray-200 line-clamp-2 mb-4">
+                                        What if you and 3–5 friends finally worked on those goals you keep talking about?
+                                    </p>
+                                    <div className="flex items-center text-white font-semibold">
+                                        View Details <ArrowRight size={20} className="ml-2 group-hover:translate-x-2 transition-transform" />
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+
                     <BackProjectsSection />
                 </div>
             </section >

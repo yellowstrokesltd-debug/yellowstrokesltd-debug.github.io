@@ -8,11 +8,23 @@ import {
     DialogTrigger,
 } from "./ui/dialog";
 
-export function BackProjectsSection() {
+interface BackProjectsSectionProps {
+    title?: string;
+    description?: string;
+    buttonLabel?: string;
+    defaultSubject?: string;
+}
+
+export function BackProjectsSection({
+    title = "Back Our Projects",
+    description = "We desire to see teachers in public institutions do better and be better. By coaching public teachers, we would like to equip them with tools that will improve their effectiveness, support their professional growth, boost confidence and motivate them to show up better at work. Back this project by clicking on the button below.",
+    buttonLabel = "Back This Project",
+    defaultSubject = ""
+}: BackProjectsSectionProps) {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        subject: '',
+        subject: defaultSubject,
         message: ''
     });
 
@@ -42,10 +54,10 @@ ${message}`;
     return (
         <div className="bg-[#28708F] backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white/10 text-center text-white">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Back Our Projects
+                {title}
             </h2>
             <p className="text-lg text-gray-100 max-w-4xl mx-auto mb-10 leading-relaxed">
-                We desire to see teachers in public institutions do better and be better. By coaching public teachers, we would like to equip them with tools that will improve their effectiveness, support their professional growth, boost confidence and motivate them to show up better at work. Back this project by clicking on the button below.
+                {description}
             </p>
 
             <Dialog>
@@ -53,7 +65,7 @@ ${message}`;
                     <button
                         className="px-8 py-4 bg-yellow-400 text-black font-semibold rounded-lg shadow-[6px_6px_12px_rgba(0,0,0,0.15),-6px_-6px_12px_rgba(255,255,255,0.7)] hover:shadow-[8px_8px_16px_rgba(0,0,0,0.2),-8px_-8px_16px_rgba(255,255,255,0.8)] active:shadow-[inset_2px_2px_5px_rgba(0,0,0,0.2),inset_-2px_-2px_5px_rgba(255,255,255,0.5)] transition-all"
                     >
-                        Back This Project
+                        {buttonLabel}
                     </button>
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-[500px] bg-[#1a2333] border-gray-700 text-white">

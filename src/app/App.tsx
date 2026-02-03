@@ -7,6 +7,8 @@ import AboutPage from './pages/AboutPage';
 
 import ContactPage from './pages/ContactPage';
 import BetterHumanBeingsPage from './pages/BetterHumanBeingsPage';
+import ProjectsPage from './pages/ProjectsPage';
+import ProjectDetailPage from './pages/ProjectDetailPage';
 
 import TermsPage from './pages/TermsPage';
 import PrivacyPage from './pages/PrivacyPage';
@@ -23,6 +25,8 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/better-human-beings" element={<BetterHumanBeingsPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/projects/:slug" element={<ProjectDetailPage />} />
 
 
           <Route path="/contact" element={<ContactPage />} />

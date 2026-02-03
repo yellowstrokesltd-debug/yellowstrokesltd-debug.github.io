@@ -25,6 +25,7 @@ export function Navigation() {
       href: '/about',
       children: [
         { href: '/about#services', label: 'Our Work' },
+        { href: '/projects', label: 'Projects' },
         { href: '/#reviews', label: 'Reviews' }
       ]
     },
