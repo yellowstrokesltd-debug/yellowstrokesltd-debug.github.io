@@ -18,7 +18,8 @@ export default defineConfig({
         '/better-human-beings',
         '/contact',
         '/terms',
-        '/privacy'
+        '/privacy',
+        '/projects/do-better-be-better'
       ]
     }),
   ],
