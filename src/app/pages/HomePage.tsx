@@ -13,25 +13,22 @@ export default function HomePage() {
 
   const reviews = [
     {
-      text: "I enjoyed the 5 minute reflection on the scripture and the sharing",
-      author: "Annabel Theo"
+      text: "It was a real shift. It challenged me in ways I didn't expect, especially around discipline and consistency. I'm leaving more aware, more aligned, and definitely more committed to my personal growth.",
+      author: "Cynthia Mwikali",
+      image: "/testimonials/cynthia.png",
     },
     {
-      text: "I enjoyed the structure of the session",
-      author: "Wangari Kabui"
+      text: "I was able to get out of my head and realize that we are all struggling but also doing our best to be better. It highlighted to me how important it is to give others grace.",
+      author: "Anabel Matalanga",
+      role: "Impact Work",
+      image: "/testimonials/anabel.png",
     },
     {
-      text: "The direction it took and the intimacy of it (small focused group)",
-      author: "Havana Gari"
+      text: "The space was far more open and inclusive than I anticipated, creating room for honest conversations. The guest speakers brought authenticity and vulnerability that was both relatable and impactful. I left with renewed clarity and direction.",
+      author: "Havana Gari",
+      role: "Humanitarian Aid Worker",
+      image: "/testimonials/havana.png",
     },
-    {
-      text: "I enjoyed getting to know each other on the kick off session",
-      author: "Judy M"
-    },
-    {
-      text: "Everyone’s warmth and friendly welcoming attitude",
-      author: "Cynthia Mutua"
-    }
   ];
 
   const nextReview = () => {
@@ -45,28 +42,28 @@ export default function HomePage() {
     {
       icon: Users,
       title: 'Coaching',
-      description: 'One on one session focused on individual goals and growth',
+      description: 'Gain clarity, overcome limitations, and take aligned action toward your goals through personalized sessions',
       color: 'bg-yellow-50 text-yellow-600',
       animatedIcon: '/coaching.gif',
     },
     {
       icon: Target,
-      title: 'Mentoring',
-      description: 'Bridging the gap of experience and ambition through guidance',
+      title: 'Mentorship',
+      description: 'Ongoing guidance and support for deeper growth, discipline, and alignment with your purpose',
       color: 'bg-blue-50 text-blue-600',
       animatedIcon: '/mentoring.gif',
     },
     {
       icon: Heart,
       title: 'Facilitating',
-      description: 'Creating safe and productive spaces to guide groups solve problems, work better, be empowered to drive change',
+      description: 'Meaningful, results-driven conversations that spark growth, reflection, and transformation for groups',
       color: 'bg-purple-50 text-purple-600',
       animatedIcon: '/facilitating.gif',
     },
     {
       icon: Sparkles,
       title: 'Training',
-      description: 'Interactive workshops that equip teams with skills vital for growth and development',
+      description: 'Practical skills and applicable frameworks that translate into real-life impact',
       color: 'bg-green-50 text-green-600',
       animatedIcon: '/training.gif',
     },
@@ -78,7 +75,7 @@ export default function HomePage() {
     <Layout>
       <SEO
         title="Home"
-        description="Evolve with purpose and grow with guidance. Yellow Stroke connects you with world-class coaches and mentors for holistic personal and professional development."
+        description="Evolve with purpose and grow with guidance. Yellow Stroke empowers modern Christian women through coaching, mentorship, facilitating, and training for transformative growth."
       />
       {/* Hero Section */}
       <section className="relative pt-20 pb-20 overflow-hidden min-h-screen flex flex-col justify-center items-center">
@@ -159,7 +156,7 @@ export default function HomePage() {
           <ScrollReveal width="100%">
             <div className="bg-white/20 backdrop-blur-md rounded-3xl p-12 shadow-[8px_8px_16px_rgba(0,0,0,0.1),-8px_-8px_16px_rgba(255,255,255,0.3)] border border-white/30">
               <p className="text-3xl md:text-4xl font-bold text-black mb-4">
-                "A global hub of collaborators empowering individuals through coaching, mentoring, and holistic development."
+                "A purpose-driven organization empowering modern Christian women through coaching, mentorship, and transformative support."
               </p>
             </div>
           </ScrollReveal>
@@ -202,10 +199,10 @@ export default function HomePage() {
                   Who We Are
                 </h2>
                 <p className="text-lg text-gray-600 mb-4">
-                  Yellow Stroke is a global hub of collaborators who bring together diverse world experts— coaches, industry veterans, master facilitators— who tailor their expertise to your specific needs. This collective intelligence and experience allows us to serve any sector with precision and agility.
+                  We are a purpose-driven organization committed to empowering modern Christian women and groups to unlock their full potential, intentionally evolve with purpose, and grow through guided, transformative support. Our team of internationally trained and accredited coaches collaborates with a network of diverse global experts across leadership, personal development, career growth, and spiritual formation.
                 </p>
                 <p className="text-lg text-gray-600">
-                  Together, we facilitate growth and empower individuals. From one-on-one professional mentoring to group training sessions, we provide the tools and guidance necessary to navigate change, drive measurable results and impact.
+                  From one-on-one professional mentoring to group training sessions, we provide the tools and guidance necessary to navigate change, drive measurable results and impact. Whether you are navigating career decisions, seeking alignment in your personal life, or rediscovering your identity and purpose, we provide practical guidance anchored in faith and intentional growth.
                 </p>
               </div>
             </div>
@@ -261,8 +258,12 @@ export default function HomePage() {
       <section id="reviews" className="py-20 bg-[#0f172a] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
-            <h3 className="text-yellow-500 font-bold tracking-widest text-sm mb-2 uppercase">Review</h3>
-            <h2 className="text-3xl md:text-4xl font-bold">Cultivating Spiritual Discipline Workshop</h2>
+            <h3 className="text-yellow-500 font-bold tracking-widest text-sm mb-2 uppercase">Reviews</h3>
+            <h2 className="text-3xl md:text-4xl font-bold mb-2">Cultivating Spiritual Discipline</h2>
+            <p className="text-gray-400 text-sm mb-4">Cohort 1 &middot; 14th January &ndash; 1st April</p>
+            <p className="text-gray-300 text-base max-w-2xl">
+              A 12-week virtual workshop bringing together over 15 women who engaged in learning how to intentionally integrate spiritual discipline across various areas of their lives.
+            </p>
           </div>
 
           <ScrollReveal width="100%">
@@ -279,12 +280,32 @@ export default function HomePage() {
                       exit={{ opacity: 0, y: -20 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <p className="text-2xl md:text-3xl font-serif italic leading-relaxed mb-6">
+                      <p className="text-xl md:text-2xl font-serif italic leading-relaxed mb-6">
                         "{reviews[currentReview].text}"
                       </p>
-                      <p className="text-gray-400 font-medium text-lg">
-                        — {reviews[currentReview].author}
-                      </p>
+                      <div className="flex items-center gap-4">
+                        {reviews[currentReview].image ? (
+                          <img
+                            src={reviews[currentReview].image}
+                            alt={reviews[currentReview].author}
+                            className="w-12 h-12 rounded-full object-cover border-2 border-yellow-500"
+                          />
+                        ) : (
+                          <div className="w-12 h-12 rounded-full bg-yellow-500/20 border-2 border-yellow-500 flex items-center justify-center text-yellow-400 font-bold text-sm">
+                            {reviews[currentReview].author.split(' ').map(n => n[0]).join('')}
+                          </div>
+                        )}
+                        <div>
+                          <p className="text-white font-medium text-lg">
+                            {reviews[currentReview].author}
+                          </p>
+                          {reviews[currentReview].role && (
+                            <p className="text-gray-400 text-sm">
+                              {reviews[currentReview].role}
+                            </p>
+                          )}
+                        </div>
+                      </div>
                     </motion.div>
                   </AnimatePresence>
                 </div>
@@ -322,7 +343,7 @@ export default function HomePage() {
                 Why do we do what we do?
               </h2>
               <p className="text-xl text-gray-700 mb-6">
-                We want to see a world where evolved individuals are living in alignment with God's purpose. We imagine a world where institutions/businesses/homes are led by individuals who are "better human beings"
+                Our vision is to guide modern Christian women into living fulfilled and purposeful lives—anchored in growth, identity, and God-led direction. Through this, we hope to see a ripple effect of impact in families, communities, and beyond.
               </p>
             </div>
           </ScrollReveal>

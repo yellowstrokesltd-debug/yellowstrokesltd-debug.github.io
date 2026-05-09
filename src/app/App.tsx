@@ -24,7 +24,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/better-human-beings" element={<BetterHumanBeingsPage />} />
+          {/* <Route path="/better-human-beings" element={<BetterHumanBeingsPage />} /> */}
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/projects/:slug" element={<ProjectDetailPage />} />
 

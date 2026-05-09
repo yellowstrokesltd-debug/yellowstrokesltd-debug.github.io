@@ -2,6 +2,7 @@ import { Layout } from '../components/layout';
 import { SEO } from '../components/SEO';
 import { Heart, Brain, HeartHandshake, Handshake, Church, Users, Target, Sparkles } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+import { ReadMore } from '../components/ReadMore';
 
 export default function AboutPage() {
   const values = [
@@ -31,32 +32,32 @@ export default function AboutPage() {
     {
       icon: Users,
       title: 'Coaching',
-      description: 'One-on-one sessions focused on individual goals and growth. Personalized guidance to help you unlock your potential and achieve your objectives.',
-      features: ['Individual goal setting', 'Personalized action plans', 'Regular progress tracking', 'Accountability support'],
+      description: 'Our coaching experiences are designed to help you gain clarity, overcome limitations, and take aligned action toward your goals. We coach holistically to help you navigate career decisions, personal growth, or life transitions.',
+      features: ['One-on-one and group coaching', 'Personalized goal setting and action plans', 'Structure and accountability', 'Career, personal growth, and life transitions'],
       image: '/yellowstroke coaching.webp',
       animatedIcon: '/coaching.gif',
     },
     {
       icon: Target,
-      title: 'Mentoring',
-      description: 'Bridging the gap of experience and ambition through guidance from industry veterans and subject matter experts.',
-      features: ['Experience sharing', 'Career guidance', 'Skill development', 'Network building'],
+      title: 'Mentorship',
+      description: 'Our mentorship offering provides ongoing guidance and support for women who desire deeper growth and direction. We walk alongside you over time—helping you build discipline, gain wisdom, and stay aligned with your purpose.',
+      features: ['Ongoing guidance and support', 'Discipline and wisdom building', 'Purpose alignment', 'Accountability and encouragement'],
       image: '/yellowstrokementoring.jpeg',
       animatedIcon: '/mentoring.gif',
     },
     {
       icon: Heart,
       title: 'Facilitating',
-      description: 'Creating safe and productive spaces to guide groups solve problems, work better, and be empowered to drive change.',
-      features: ['Group dynamics', 'Conflict resolution', 'Team building', 'Change management'],
+      description: 'We create and lead meaningful, results-driven conversations that spark growth, reflection, and transformation. Our facilitation sessions are thoughtfully designed to encourage participation, deepen understanding, and drive actionable outcomes.',
+      features: ['Small groups and corporate workshops', 'Team building and conflict resolution', 'Perspective-challenging experiences', 'Change navigation and resilience'],
       image: '/yellowstrokefacilitating.webp',
       animatedIcon: '/facilitating.gif',
     },
     {
       icon: Sparkles,
       title: 'Training',
-      description: 'Interactive workshops that equip teams with skills vital for growth and development in today\'s dynamic environment.',
-      features: ['Skills workshops', 'Team development', 'Leadership training', 'Professional growth'],
+      description: 'Our training programs equip you with practical skills and applicable frameworks that translate into real-life impact. Each session is intentionally structured to deliver both insight and transformation.',
+      features: ['Skills development and leadership', 'Team effectiveness', 'Professional growth', 'Interactive and engaging learning'],
       image: '/yellowstroketraining.webp',
       animatedIcon: '/training.gif',
     },
@@ -66,7 +67,7 @@ export default function AboutPage() {
     <Layout>
       <SEO
         title="About Us"
-        description="Meet the Yellow Stroke team. We are a global network of experts dedicated to your growth through coaching, mentoring, and training."
+        description="We are a purpose-driven organization committed to empowering modern Christian women and groups through coaching, mentorship, facilitating, and training."
       />
       {/* Hero Section */}
 
@@ -77,7 +78,7 @@ export default function AboutPage() {
               About <span className="text-yellow-400">Yellow Stroke</span>
             </h1>
             <p className="text-xl text-blue-50 max-w-3xl mx-auto">
-              A global collective of experts dedicated to empowering individuals and organizations through transformative development
+              A purpose-driven organization committed to empowering modern Christian women and groups to unlock their full potential
             </p>
           </div>
         </div>
@@ -89,14 +90,16 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Our Mission
+                Who We Are
               </h2>
-              <p className="text-lg text-gray-700 mb-4">
-                Yellow Stroke exists to facilitate growth and empower individuals at every level. We bring together diverse world experts—coaches, industry veterans, and master facilitators—who tailor their expertise to your specific needs.
-              </p>
-              <p className="text-lg text-gray-700 mb-4">
-                This collective intelligence and experience allows us to serve any sector with precision and agility. From one-on-one professional mentoring to group training sessions, we provide the tools and guidance necessary to navigate change and drive measurable results.
-              </p>
+              <ReadMore lines={4}>
+                <p className="text-lg text-gray-700 mb-4">
+                  We are a purpose-driven organization committed to empowering modern Christian women and groups to unlock their full potential, intentionally evolve with purpose, and grow through guided, transformative support. At the core of who we are is a deep belief that every woman carries a unique purpose—and with the right guidance, clarity, and environment, she can confidently step into it and transform.
+                </p>
+                <p className="text-lg text-gray-700 mb-4">
+                  Our team is made up of internationally trained and accredited coaches who collaborate with a network of diverse global experts across leadership, personal development, career growth, and spiritual formation. This blend of expertise allows us to offer a holistic and personalized approach—meeting you exactly where you are and equipping you with the tools, structure, and insight needed to move forward with clarity and confidence.
+                </p>
+              </ReadMore>
             </div>
 
             <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-3xl p-12 shadow-[12px_12px_24px_rgba(0,0,0,0.15),-12px_-12px_24px_rgba(255,255,255,0.5)] border-4 border-white/60">
@@ -114,20 +117,12 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-3xl p-12 shadow-[12px_12px_24px_rgba(0,0,0,0.15),-12px_-12px_24px_rgba(255,255,255,0.5)] border-4 border-white/60 order-2 lg:order-1">
               <div className="space-y-6">
-                <div>
-                  <h3 className="text-2xl font-semibold mb-3 text-[#29708F]" style={{ fontFamily: "'League Spartan', sans-serif" }}>
-                    Better Human Beings
-                  </h3>
-                  <p className="text-gray-700">
-                    Our flagship service that bridges the gap between professional success and personal wellbeing through holistic development.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="text-xl font-semibold mb-2">Do better, Be better.</h4>
-                  <p className="text-gray-600">
-                    Consistent purposeful actions lead to progress. Progress gets us to be better.
-                  </p>
-                </div>
+                <p className="text-lg text-gray-700">
+                  We are passionate about walking alongside women in every stage of life—supporting you as you gain clarity, take action, and build a life that reflects both your values and your vision.
+                </p>
+                <p className="text-gray-600">
+                  From young women exploring their next steps to mothers seeking renewed direction, our role is to guide, empower, and support you as you evolve.
+                </p>
               </div>
             </div>
 
@@ -135,12 +130,14 @@ export default function AboutPage() {
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 Our Vision
               </h2>
-              <p className="text-lg text-gray-700 mb-4">
-                We want to see a world where transformed individuals are living in alignment with God's purpose. We imagine a world where institutions are led by individuals who are "better human beings."
-              </p>
-              <p className="text-lg text-gray-700">
-                Whether you are an individual, a group, or an institution, we aim to help you become a better version of yourself than you were yesterday.
-              </p>
+              <ReadMore lines={4}>
+                <p className="text-lg text-gray-700 mb-4">
+                  Our vision is to guide modern Christian women into living fulfilled and purposeful lives—anchored in growth, identity, and God-led direction. Through this, we hope to see a ripple effect of impact in families, communities, and beyond.
+                </p>
+                <p className="text-lg text-gray-700">
+                  Beyond individual growth, we are building a community of women who are committed to living intentionally, growing consistently, and leading purposefully. A space where faith meets action, and where transformation is both personal and collective.
+                </p>
+              </ReadMore>
             </div>
           </div>
         </div>
@@ -183,7 +180,7 @@ export default function AboutPage() {
               Our Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We offer four core services tailored to meet your specific needs
+              We offer intentional, faith-anchored services designed to support your growth, provide clarity, and equip you to move forward with confidence and purpose
             </p>
           </div>
 
@@ -199,7 +196,9 @@ export default function AboutPage() {
                     <img src={service.animatedIcon} alt={service.title} className="w-16 h-16 object-contain" />
                   </div>
                   <h3 className="text-3xl font-semibold mb-4">{service.title}</h3>
-                  <p className="text-lg text-gray-600 mb-6">{service.description}</p>
+                  <ReadMore lines={3}>
+                    <p className="text-lg text-gray-600 mb-6">{service.description}</p>
+                  </ReadMore>
                   <ul className="space-y-3">
                     {service.features.map((feature) => (
                       <li key={feature} className="flex items-center text-gray-700">
@@ -233,12 +232,14 @@ export default function AboutPage() {
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
               Our Approach
             </h2>
-            <p className="text-xl text-gray-300 mb-6">
-              We take a radical, holistic approach to development, integrating Christian spirituality, nutritional health, mental and physical fitness with modern necessities like digital health, sexual wholeness, and the power of rest.
-            </p>
-            <p className="text-lg text-gray-400">
-              No matter who you are or what you do, we believe your best version is waiting to be unlocked—one better day at a time.
-            </p>
+            <ReadMore lines={4} dark>
+              <p className="text-xl text-gray-300 mb-6">
+                Across all our services, our focus remains the same: to deliver personalized, faith-centered guidance that meets you in your current season while equipping you for what's next. We take a holistic approach—integrating spiritual alignment, practical tools, and global expertise—to support deep, lasting transformation.
+              </p>
+              <p className="text-lg text-gray-400">
+                Our aim is to help both women and groups unlock their full potential, gain clarity of purpose, and grow in a way that is intentional, impactful, and sustainable.
+              </p>
+            </ReadMore>
           </div>
         </div>
       </section>

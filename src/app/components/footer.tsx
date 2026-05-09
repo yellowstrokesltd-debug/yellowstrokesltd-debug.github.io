@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { Mail, MapPin, Phone, Instagram, Facebook } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -52,6 +52,16 @@ export function Footer() {
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
                 <span>Global Operations</span>
               </div>
+            </div>
+            
+            <h3 className="font-semibold mt-8 mb-4">Socials</h3>
+            <div className="flex space-x-4">
+              <a href="https://www.instagram.com/better_humanbeings/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-400 transition-colors">
+                <Instagram size={20} />
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61585657845666" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-400 transition-colors">
+                <Facebook size={20} />
+              </a>
             </div>
           </div>
         </div>

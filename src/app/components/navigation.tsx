@@ -29,7 +29,7 @@ export function Navigation() {
         { href: '/#reviews', label: 'Reviews' }
       ]
     },
-    { href: '/better-human-beings', label: 'Better Human Beings' },
+    // { href: '/better-human-beings', label: 'Better Human Beings' },
   ];
 
   return (

@@ -7,6 +7,13 @@ import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 export default function ProjectsPage() {
     const projects = [
         {
+            id: 'beyond-the-classroom',
+            title: 'Beyond The Classroom',
+            description: "Retirement isn't the end of your journey. Join our virtual coaching workshop to rediscover purpose, wellbeing, and new opportunities.",
+            image: '/projecttwo.webp',
+            link: '/projects/beyond-the-classroom'
+        },
+        {
             id: 'do-better-be-better',
             title: 'DoBetterBeBetterTogether Challenge',
             description: "What if you and 3–5 friends finally worked on those goals you keep talking about? This time, it’s not just talk—you’ll be guided by experts who help you evolve with purpose.",
